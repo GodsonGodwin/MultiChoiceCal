@@ -68,8 +68,8 @@ $('.output').click(function(){
        fontSize: '25px'});
 
        $('.solve').css({
-        height: '75px',
-        fontSize: '25px'});
+        height: '70px',
+        fontSize: '30px'});
 
         $('.areaRect > h2').css({
            textAlign: 'center',
