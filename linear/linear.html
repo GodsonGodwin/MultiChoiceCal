@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinearInputt</title>
+    <script src="/linear.js"></script>
+
+</head>
+<body>
+
+    
+    <div id="result">
+        <div id="solution">
+            <p id="solution-value"> </p>
+        </div>
+        <div id="outPut">
+            <button class="solve">Solve...</button>
+            <p id="output-value"> </p>
+            
+        </div>
+    </div>
+        <div class="linearEquation">
+            <h2 style="text-align: center; padding: 3px; color: beige;">Input Values</h2>
+            <p style="color: bisque; font-size: 15px; text-align: center;">Input in the following format: 2x + 3 = 5
+            </p>
+    
+            <label class="input"> Variable </label>
+            <input class="linearInput" id="variable" type="number" required placeholder="Coefficient">
+    
+            <label class="input"> Constant </label>
+            <input class="linearInput" id="constant" type="number" required placeholder="Constant">
+    
+            <label class="input"> Result </label>
+            <input class="linearInput" id="RHS" type="number" required placeholder="Result">
+    
+            <div class="evaluate">
+                <button class="output">Output</button>
+                <button class="reset" type="reset">Reset</button>
+            </div>
+
+            <p style="color: bisque; font-size: 15px; padding: 20px;"><i>Note:</i> If the calculator did not compute something or you have identified an error, 
+                just check your output-screen for an invalid value or re-enter your equation.</p>
+        </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,314 @@
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+
+#calculator{
+background-color: #818181;
+height: 650px;
+width: 450px;
+margin: 30px auto;
+top: 50px;
+position: relative;
+border-radius: 5px;
+overflow-y: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#keyboard{
+    height: 550px;
+    position: relative;
+    margin-top: 60px;
+}
+#result{
+    height: 140px;
+}
+
+
+#solution{
+    text-align: right;
+    height: 50px;
+    margin: 5px 20px;
+    padding-top: 5px;
+    color: #0f0e0e;
+    font-size: 25px;
+    background-color:aliceblue;
+    border: 2px solid blueviolet;
+}
+
+#outPut{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border: 2px solid violet;
+    display:block;
+    
+    
+}
+
+.solve{
+    width: 100px;
+    height: 55px;
+    float: right;
+    border-width: 0;
+    font-size: 25px;
+    background-color: #b9b9b9;
+
+}
+
+#keyboard label{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing:3px;
+    color:thistle;
+}
+
+#keyboard .linearInput{
+    display: inline;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 180px;
+    height: 30px;
+    clear: both;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: cursive;
+    letter-spacing:3px;
+    border: 2px solid blueviolet;
+    color: black;
+}
+
+.evaluate{
+    display: inline;
+    margin-left: 200px;
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+    padding-top: 45px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: cursive;
+    color: black;
+}
+
+.output:hover, .reset:hover, .solve:hover{
+    color: cornsilk;
+    background-color: #494848; ;
+}
+
+
+.solve:active{
+    font-size: 23px;   
+}
+
+/* SIDE BAR */
+.sidebar {
+    position:absolute;
+    z-index: 1;
+    background-color: #c5c4c4;;
+    overflow-y: auto;
+    transition: 0.5s;
+    padding-top: 60px;
+    height: 650px;
+  }
+  
+  .sidebar .mainMenu {
+    padding: 15px 15px 15px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar .mainMenu:hover {
+    background-color: #818181;
+    color:wheat;
+    border-left: 3px solid wheat
+  }
+  
+.closebtn, .openbtn{
+    position: absolute;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 35px;
+    top: 5px;
+    
+  }
+  
+  .closebtn:hover,
+  .openbtn:hover {
+    background-color:#919191;;
+    color: black;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px,  */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar .mainMenu {font-size: 18px;}
+  }
+
+  /*ABOUT*/
+  .about{
+background-color: #e9e3e3;
+width: 345px;
+color: black;
+font-size: 20px;
+z-index: 1;
+padding: 10px;
+position:absolute;
+top: 250px;
+display: none;
+
+}
+
+
+
+  /*DROPDOWN */
+
+#dropdown-content {
+  display: none;
+  position: relative;
+  padding: 5px 5px 5px 15px;  
+  margin-left: 35px;
+  width: 280px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+    
+}
+
+#myDropdown a:hover,
+#equationDropdown a:hover{
+    background-color: aliceblue;
+    color:#818181;
+    border-left: 2px solid violet
+    
+    
+}
+
+
+
+  /* SIMULTANEOUS EQUATION (2 VARIABLES)*/
+  #keyboard .simultaneousInput{
+    display: inline;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    clear: both;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: cursive;
+    letter-spacing:3px;
+    border: 2px solid blueviolet;
+    color: black;
+}
+
+
+
+/* STANDARD CALCULATOR */
+
+#resultStandard{
+    height: 140px;
+    /* border: 2px solid yellow; */
+}
+
+#keyboardStandard{
+    /* border: 5px solid purple; */
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 350px;
+
+}
+
+#history{
+    text-align: right;
+    height: 50px;
+    margin: 5px 20px;
+    padding-top: 5px;
+    color: #696868;
+    font-size: 30px;
+    background-color:aliceblue;
+    border: 2px solid blueviolet;
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border: 2px solid violet;
+    display:block;   
+}
+
+.operator, .number{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 20%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 20px;
+    background-color:rgb(212, 231, 248);
+
+}
+.operator{
+    color: aliceblue;
+    background-color: #494848 ;
+}
+
+
+.operator:hover, .number:hover{
+    background-color: #b9b3b3;
+    color: black;
+}
+
+.operator:active, .number:active{
+    font-size: 13px;
+}
+
+/* AREA */
+.areaStyle{
+    display: inline;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    clear: both;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: cursive;
+    letter-spacing:3px;
+    border: 2px solid blueviolet;
+    color: black;
+
+}
+
+
+
+

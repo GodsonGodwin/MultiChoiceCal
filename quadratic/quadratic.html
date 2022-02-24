@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic</title>
+    <script src="/quadratic.js"></script>
+
+</head>
+<body>
+        <div id="result">
+            <div id="solution">
+                <p id="solution-value"> </p>
+            </div>
+            <div id="outPut">
+                <button class="solve">Solve...</button>
+                <p id="output-value"> </p>
+                
+            </div>
+        </div>
+
+        <div class="simulEquation">
+            <h2 style="text-align: center; padding: 5px; color: beige;">Input Values</h2>
+            <p style="color: bisque; font-size: 20px; text-align: center;">Enter coefficinet of the equations</p>
+            
+            <div class="equation py-4">
+                <input class="simultaneousInput" id="firstTerm" type="number" required placeholder= "ax&#xb2 =">
+                <input class="simultaneousInput" id="middleTerm" type="number" required placeholder="bx = ">
+                <input class="simultaneousInput" id="constant" type="number" required placeholder="c = ">
+                <p style="color: bisque; display:inline; font-size: 20px;"> = 0 </p>
+            </div>
+        </div>
+    
+        <div class="evaluate">
+            <button class="output">Output</button>
+            <button class="reset" type="reset">Reset</button>
+        </div>
+
+        <p style="color: bisque; font-size: 15px; padding: 40px;"><i>Note:</i> If the calculator did not compute something or you have identified an error, 
+            just check your output-screen for an invalid value or re-enter your equation.</p>
+    </div> 
+
+    
+    
+    </div>  
+</body>
+</html>

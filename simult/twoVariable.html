@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simult</title>
+    <script src="/simult.js"></script>
+</head>
+<body>
+    <div id="result">
+        <div id="solution">
+            <p id="solution-value"> </p>
+        </div>
+        <div id="outPut">
+            <button class="solve">Solve...</button>
+            <p style="margin: 0;" id="output-value"> </p> <br>
+            <p style="margin: 0;" id="output-value2"> </p>
+            
+        </div>
+    </div>
+
+    <div class="simulEquation">
+        <h2 style="text-align: center; padding: 5px; color: beige;">Input Values</h2>
+        <div class="equation1 py-4">
+            <input class="simultaneousInput" id="X1" type="number" required placeholder="X = ">
+            <input class="simultaneousInput" id="Y1" type="number" required placeholder="Y = ">
+            <p style="color: bisque; display:inline; font-size: 20px;"> = </p>
+            <input class="simultaneousInput" id="Z1" type="number" required placeholder="Value">
+            <p style="color: bisque; display:inline; font-size: 20px;"> ......(1)</p>
+        </div>
+
+        <div class="equation2 py-4">
+            <input class="simultaneousInput" id="X2" type="number" required placeholder="X = ">
+            <input class="simultaneousInput" id="Y2" type="number" required placeholder="Y = ">
+            <p style="color: bisque; display:inline; font-size: 20px;"> = </p>
+            <input class="simultaneousInput" id="Z2" type="number" required placeholder="Value">
+            <p style="color: bisque; display:inline; font-size: 20px;"> ......(2)</p>
+        </div>
+    </div>
+
+    <div class="evaluate">
+        <button class="output">Output</button>
+        <button class="reset" type="reset">Reset</button>
+    </div>
+
+    <p style="color: bisque; font-size: 15px; padding: 30px;"><i>Note:</i> If the calculator did not compute something or you have identified an error, 
+        just check your output-screen for an invalid value or re-enter your equation.</p>
+</div> 
+</body>
+</html>
+
