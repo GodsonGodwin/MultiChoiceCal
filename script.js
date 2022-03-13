@@ -56,6 +56,7 @@
               backgroundPositionX: "100px", 
               backgroundPositionY: "2000px"
             }).show();
+            
 
             $(".close").click(function (e) {
                 $(".about").hide();
